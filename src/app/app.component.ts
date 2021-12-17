@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HelperService } from './shared/helper.service';
+import { ThemeService } from './shared/theme.service'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Invetry-app-task';
+  title = '';
+
+  constructor(){
+
+  }
+
 }

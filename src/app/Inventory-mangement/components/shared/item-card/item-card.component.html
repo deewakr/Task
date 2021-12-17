@@ -1,0 +1,20 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let l of list">
+<mat-card  class="example-card">
+    <mat-card-title>{{l.item_no}}</mat-card-title>
+    <mat-card-subtitle>{{l.item_name}}</mat-card-subtitle>
+    <mat-card-subtitle>{{l.item_type}}</mat-card-subtitle>
+    <mat-card-subtitle>{{l.date_added | date : 'short'}}</mat-card-subtitle>
+    <mat-card-subtitle>{{l.active}}</mat-card-subtitle>
+    <mat-card-subtitle>{{l.cost}}</mat-card-subtitle>
+    <!-- <mat-card-content> -->
+      <!-- <p>This card indeterminates progress bar.</p> -->
+      <!-- <p>{{longText}}</p> -->
+    <!-- </mat-card-content> -->
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="Edit(l)">Edit</button>
+      <button mat-raised-button color="warn" (click)="remove()">Remove</button>
+    </mat-card-actions> 
+  </mat-card>
+</mat-grid-tile>
+  </mat-grid-list>
