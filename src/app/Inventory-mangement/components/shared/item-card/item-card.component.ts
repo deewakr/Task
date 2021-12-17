@@ -30,6 +30,7 @@ this.listdata=this.list;
   
  }
  remove(){
+console.log('hello remove');
 
  }
 
